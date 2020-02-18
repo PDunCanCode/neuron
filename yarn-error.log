@@ -1,0 +1,55 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js
+
+PATH: 
+  C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\David\bin;C:\RailsInstaller\Git\cmd;C:\RailsInstaller\Ruby2.2.0\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\WINDOWS\System32\OpenSSH;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files (x86)\Yarn\bin;C:\Program Files\nodejs;C:\Users\David\Anaconda3;C:\Users\David\Anaconda3\Library\mingw-w64\bin;C:\Users\David\Anaconda3\Library\usr\bin;C:\Users\David\Anaconda3\Library\bin;C:\Users\David\Anaconda3\Scripts;C:\Users\David\AppData\Local\Programs\Python\Python37-32\Scripts;C:\Users\David\AppData\Local\Programs\Python\Python37-32;C:\Users\David\AppData\Local\Microsoft\WindowsApps;C:\Users\David\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\David\AppData\Local\Yarn\bin;C:\Program Files\heroku\bin;C:\Users\David\AppData\Roaming\npm
+
+Yarn version: 
+  1.19.0
+
+Node version: 
+  12.15.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: ENOENT: no such file or directory, lstat 'C:\Users\David\Desktop\devconnector_2.0-master\node_modules\client\node_modules\@material-ui\styles\node_modules'
+
+npm manifest: 
+  {
+    "name": "neuron",
+    "version": "1.0.0",
+    "description": "Social network for developers",
+    "main": "server.js",
+    "scripts": {
+      "start": "node server",
+      "server": "nodemon server",
+      "client": "yarn start --prefix client",
+      "dev": "concurrently \"yarn run server\" \"yarn run client\"",
+      "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+    },
+    "author": "Paul Duncan",
+    "license": "MIT",
+    "dependencies": {
+      "bcryptjs": "^2.4.3",
+      "client": "file:client",
+      "config": "^3.2.5",
+      "express": "^4.17.1",
+      "express-validator": "^6.3.1",
+      "gravatar": "^1.8.0",
+      "jsonwebtoken": "^8.5.1",
+      "mongoose": "^5.8.10",
+      "request": "^2.88.0"
+    },
+    "devDependencies": {
+      "concurrently": "^5.1.0",
+      "nodemon": "^2.0.2"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
