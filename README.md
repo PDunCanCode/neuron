@@ -4,6 +4,7 @@
 
 This is a FullStack MERN Application, utilizing Mongo Atlass DB. The goal was to create a place for current students and alumni Geeks to connect and find one another. The entire project is written in current React Hooks and functional components only. No class based components were used. Additionally, vanta && three.js libraries were used for the interactive landing page, eye-cing on the app for me.
 
+live version: https://neuron-socialnetwork.herokuapp.com/
 ```
 Want a copy?
 
